@@ -35,3 +35,13 @@ def solution(numbers):
         answer.append(1 if is_valid_tree(padded) else 0)
 
     return answer
+
+# test
+numbers = [
+    2**50 - 1,
+    2**49 - 1,
+    2**48 - 1,
+    2**47 - 1
+]
+ 
+print(solution(numbers))  # Expected output: [1, 1, 0]
